@@ -13,21 +13,6 @@ closeBtn.addEventListener("click", ()=>{
     document.getElementById("menu-group").style.display = "none";
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 hoverEffect =()=>{
     if (MouseEvent){
 
