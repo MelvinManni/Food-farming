@@ -80,7 +80,7 @@ p{
     text-decoration: none;
     font-size: 13px;
     color:black ;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Zilla Slab', serif;
 
 }
 
@@ -202,6 +202,7 @@ p{
     }
 
     .menu-group{
+        display: block;
         background-color: rgb(129, 94, 50);
         width: 220px;
         position: fixed;
@@ -210,7 +211,8 @@ p{
         left: 0;
         padding: 20px 0 0 20px;
         list-style: none; 
-        transition: 3s ease;
+        transition: 1.2s ease;
+        
     }
 
     .open{
@@ -269,7 +271,7 @@ p{
 
     .close{
         position: relative;
-        top: 45%;
+        top: 39%;
         right: -193px;
         z-index: 7000;
     }
