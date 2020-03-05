@@ -1,4 +1,4 @@
-/* @import "compass/css3" */
+
 
 *{
     margin: 0;
@@ -269,7 +269,7 @@ p{
 
     .close{
         position: relative;
-        top: 45%;
+        top: 39%;
         right: -193px;
         z-index: 7000;
     }
