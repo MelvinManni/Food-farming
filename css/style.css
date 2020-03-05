@@ -1,0 +1,347 @@
+/* @import "compass/css3" */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-group{
+    display: none;
+}
+
+.open{
+    display: none;
+}
+
+p{
+    font-family: 'Zilla Slab', serif;
+}
+
+.container{
+    margin: 0 5%;
+}
+
+
+.main-body{
+    background-color: rgb(248, 243, 237);
+    margin: 10px 0;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding: 50px 0 30px 50px;
+}
+
+.nav-group{
+    width: 55%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 15px;
+
+}
+
+.menu-icon img{
+    margin: 0;
+    padding: 0;
+}
+.nav-menu{
+    width: 15%;
+}
+
+.first-nav, .second-nav{
+     width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-seperator{
+    margin-bottom: 5px;
+}
+
+.nav-link{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    color:black ;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.nav-link:hover{
+    color: rgb(129, 94, 50);
+}
+
+
+.the-vine{
+    position: absolute;
+    top: -24px;
+    right: 5%;
+    z-index: 20;
+}
+
+.main-content{
+    width: 50%;
+}
+
+
+.foot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.mouse i{
+    font-size: 20px;
+    color: rgb(129, 94, 50);
+}
+
+.read-more{
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: max-content;
+}
+.read-more button{
+    cursor: pointer;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgb(129, 94, 50);
+    transition: 0.4s ease;
+
+}
+
+#arrow{
+    height: 18px;
+    width: 18px;
+    padding: 5px;
+    border: 1px solid rgb(129, 94, 50);
+    background-color: rgb(129, 94, 50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s ease ;
+}
+
+.arrow i{
+    font-size: 20px;
+    color: rgb(248, 243, 237);
+    transition: 1s ease ;
+}
+
+.read-more:hover{
+    transition: ease;
+}
+
+
+.title .small, .title .big{
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 700;
+}
+
+.title .big{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.title .small{
+    font-size: 20px;
+}
+
+.description{
+    line-height: 19px;
+    word-spacing: 1.5px;
+}
+
+.wavy-line{
+    margin: 10px 0;
+}
+
+
+@media all and (max-width: 1024px){
+    .the-vine{
+        right: 0;
+    }
+}
+
+@media all and (max-width: 769px){
+    .the-vine{
+        display: none;
+    }
+}
+
+
+@media all and (max-width:765px){
+    .nav-group{
+        display: none;
+    }
+
+    .menu-group{
+        background-color: rgb(129, 94, 50);
+        width: 220px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px 0 0 20px;
+        list-style: none; 
+        transition: 3s ease;
+    }
+
+    .open{
+        display: block;
+        margin-left: auto;
+        padding-top: 10px;
+        width: max-content;
+        height: max-content;
+    }
+
+    .open i {
+        font-size: 25px;
+    }
+
+    .menu1{
+        padding-top: 20px;
+    }
+
+    .menu-nav {
+        position: relative;
+        left: 30px;
+    }
+
+    .menu-nav li {
+        margin-bottom: 30px;
+    }
+
+    .mob-link{
+        transition: 1s ease;
+    }
+
+    .menu-nav li a{
+        font-size: 18px;
+    }
+
+    .menu-nav li a:hover{
+        color: rgb(248, 243, 237);
+        padding-left: 40px;
+    }
+
+    .bounce{
+        width: 100%;
+    }
+
+    .bounceLogo{
+        position: relative;
+        right: -150px;
+        animation :4s bounced infinite;
+        animation-delay: 1s;
+
+    }
+
+    .close i{
+        font-size: 40px;
+    }
+
+    .close{
+        position: relative;
+        top: 45%;
+        right: -193px;
+        z-index: 7000;
+    }
+
+    .slide-in {
+        animation: slide-in 2s forwards;
+        -webkit-animation: slide-in 2s forwards;
+    }
+
+    .slide-out {
+        animation: slide-out 0.5s forwards;
+        -webkit-animation: slide-out 0.5s forwards;
+    }
+
+    .main-content{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+@keyframes bounced {
+  8% {
+    transform:translate3d(0,-45px,0) scaleY(0.4);
+    transform-origin:left bottom 0;
+  }
+  25% {
+    transform:translate3d(0,-110px,0) scaleY(1.4);
+  }
+  40% {
+    transform:translate3d(0,0,0) scaleY(0.6);
+    transform-origin:left bottom 0;
+  }
+  50% {
+    transform:translate3d(0,0,0) scaleY(1.2);
+    transform-origin:left bottom 0;
+  }
+  60% {
+    transform:translate3d(0,0,0) scaleY(1);
+    transform-origin:left bottom 0;
+  }
+  80% {
+    opacity:1;
+    transform:translate3d(0,0,0);
+  }
+  100% {
+    opacity:0;
+    transform:translate3d(0,50px,0);
+  }
+}
+
+
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
