@@ -238,20 +238,25 @@ p{
         
     }
 
+    .menu-nav ul{
+        width: 300px;
+    }
+
     .menu-nav li {
-        margin-bottom: 30px;
-        /* width: max-content; */
+        margin-bottom: 30px; 
         padding: 5px 0;
         border: 1px solid ;
-        animation: 3s border 1;
-        transition: 3s ease;
+        transition: 1s ease;
+        /* width: max-content; */
     }
-/* 
-    .menu-nav li:hover{
-    } */
+
 
     .mob-link{
         transition: 1s ease;
+    }
+
+    .menu-nav li:hover{
+        border-color: white;
     }
 
     .menu-nav li a{
@@ -260,10 +265,10 @@ p{
         padding-left: 30px;
     }
 
-    .menu-nav li a:hover{
+    .menu-nav li:hover .nav-link{
         box-sizing: border-box;
         color: rgb(248, 243, 237);
-        padding-left: 70px;
+        padding-left: 50px;
     }
 
     .bounce{
@@ -363,50 +368,3 @@ p{
 }
 
 
-
-@keyframes border {
-  12% {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #fff  #000 #000 #000;
-  }
-  24% {
-      border-width: 1px;
-      border-style: solid;
-    border-color:#000 #fff #000 #000;
-  }
-  36% {
-      
-      border-width: 1px;
-      border-style: solid;
-    border-color:#000 #000 #fff #000;
-  }
-  48% {
-      border-width: 1px;
-      border-style: solid;
-    border-color: #000 #000 #000 #fff;
-  }
-  60% {
-      border-width: 1px;
-      border-style: solid;
-    border-color: #fff #000 #000 #000;
-  }
-  72% {
-      border-width: 1px;
-      border-style: solid;
-    border-color: #000 #fff #000 #000;
-  }
-  84% {
-      border-width: 1px;
-      border-style: solid;
-    border-color: #000 #000 #fff #000;
-  }
-
-  100% {
-      
-      border-width: 1px;
-      border-style: solid;
-    border-color: #000 #000 #000 #fff;
-
-  }
-}
